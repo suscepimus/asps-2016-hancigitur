@@ -1,0 +1,115 @@
+
+%%% fonte grégorienne
+% \input{mechtildis.tex}
+\gresetbarspacing{new}
+
+% space between glyphs in the same element
+\grechangedim{interglyphspace}{0.0715 cm}{scalable}%
+% space between elements which has the size of a note
+\grechangedim{glyphspace}{0.143 cm plus 0 cm minus 0.01822 cm}{scalable}%
+% minimal space between notes of different words
+\grechangedim{interwordspacenotes}{0.3775 cm plus 0.005 cm minus 0.005 cm}{scalable}%
+% minimal space between notes of the same syllable.
+\grechangedim{intersyllablespacenotes}{0.286 cm}{scalable}%
+% minimal space between letters of different words. Makes sense to have
+% the same plus and minus as interwordspacenotes.
+\grechangedim{interwordspacetext}{0.17875 cm plus 0.286 cm minus 0.0143 cm}{scalable}%
+
+% when bolshifts are enabled, minimal space between a clef at the beginning of the line and a leading alteration glyph (should be larger than clefflatspace so that a flatted clef can be distinguished from a flat which is part of the first glyph on a line, but also smaller than spaceafterlineclef, the distance from the clef to the first notes)
+\grechangedim{beforealterationspace}{0.143 cm}{scalable}%
+% half-space between elements
+\grechangedim{halfspace}{0.0715 cm plus 0.00091 cm minus 0.00182 cm}{scalable}%
+% space between elements
+%\grechangedim{interelementspace}{0.143 cm cm plus 0.00182 cm minus 0.00363 cm}{scalable}%
+% larger space between elements
+\grechangedim{largerspace}{0.286 cm plus 0.01822 cm minus 0.00911 cm}{scalable}%
+% space before end-of-line custos
+\grechangedim{spacebeforeeolcustos}{0.286 cm}{scalable}%
+% space after a clef at the beginning of a line
+\grechangedim{spaceafterlineclef}{0.286 cm}{scalable}%
+
+% bars having their own syllable, with text associated (new bar spacing algorithm only)
+% plus or minus here will trigger some problems
+\grechangedim{bar@virgula@standalone@text}{0.286 cm}{scalable}%
+\grechangedim{bar@minima@standalone@text}{0.286 cm}{scalable}%
+\grechangedim{bar@minor@standalone@text}{0.286 cm}{scalable}%
+\grechangedim{bar@dominican@standalone@text}{0.286 cm}{scalable}%
+\grechangedim{bar@maior@standalone@text}{0.286 cm}{scalable}%
+\grechangedim{bar@finalis@standalone@text}{0.286 cm}{scalable}%
+% actual space before divisio finalis, not additional one
+\grechangedim{bar@finalfinalis@standalone@text}{0.286 cm}{scalable}%
+% bars having their own syllable, with no text associated (new bar spacing algorithm only)
+\grechangedim{bar@virgula@standalone@notext}{0.286 cm}{scalable}%
+\grechangedim{bar@minima@standalone@notext}{0.286 cm}{scalable}%
+\grechangedim{bar@minor@standalone@notext}{0.286 cm}{scalable}%
+\grechangedim{bar@dominican@standalone@notext}{0.286 cm}{scalable}%
+\grechangedim{bar@maior@standalone@notext}{0.286 cm}{scalable}%
+\grechangedim{bar@finalis@standalone@notext}{0.286 cm}{scalable}%
+\grechangedim{bar@finalfinalis@standalone@notext}{0.286 cm}{scalable}%
+
+% minimal space between letters of different syllable texts for text around bars
+% (new bar spacing algorithm only)
+\grechangedim{interwordspacetext@bars}{0.286 cm}{scalable}%
+% minimal space between letters of different syllable texts for text around bars,
+% euouae context
+\grechangedim{interwordspacetext@bars@euouae}{0.143 cm}{scalable}%
+\grechangedim{interwordspacetext@bars@notext}{0.143 cm}{scalable}%
+% minimal space between letters of different syllable texts for text around bars,
+% euouae context
+\grechangedim{interwordspacetext@bars@notext@euouae}{0.2145 cm}{scalable}%
+% rubber length that will be added around bars in new bar spacing algorithm
+\grechangedim{bar@rubber}{0 cm plus 0.2145 cm minus 0.0143 cm}{scalable}%
+% additional space that will appear around bars that are preceded by a custos and followed by a key.
+\grechangedim{spacearoundclefbars}{0.03645 cm plus 0.00455 cm minus 0.0009 cm}{scalable}%
+% Maximum offset between a bar and its associated text when the text goes left of the bar (new bar spacing algorithm only)
+\grechangedim{maxbaroffsettextleft}{0.286 cm}{scalable}%
+% Same as maxbaroffsettextleft when text goes right of the bar
+\grechangedim{maxbaroffsettextright}{0.286 cm}{scalable}%
+% Maximum offset between a no-bar (i.e. something like `text()` in gabc) and its associated text when the text goes left of the no-bar (new bar spacing algorithm only)
+\grechangedim{maxbaroffsettextleft@nobar}{0.143 cm}{scalable}%
+% Same as maxbaroffsettextleft@nobar when text goes right of the no-bar
+\grechangedim{maxbaroffsettextright@nobar}{0.143 cm}{scalable}%
+% Space between the two bars of a divisio finalis
+% Maximum offset between a bar and its associated text when the text goes left of the bar and the bar terminates a line (i.e. something line `text(::z)` in gabc) (new bar spacing algorithm only)
+\grechangedim{maxbaroffsettextleft@eol}{0.0715 cm}{scalable}%
+% Same as maxbaroffsettextleft@eol when text goes right of the bar
+\grechangedim{maxbaroffsettextright@eol}{0.0715 cm}{scalable}%
+\grechangedim{divisiofinalissep}{0.1094 cm}{scalable}%
+% maximal space between two syllables for which we consider a dash is not needed
+\grechangedim{maximumspacewithoutdash}{0.2 mm}{scalable}%
+% an extensible space for the beginning of lines
+\grechangedim{afterclefnospace}{0 cm plus 0 cm minus 0 cm}{scalable}%
+% space between the initial and the beginning of the score
+\grechangedim{afterinitialshift}{1.43 mm}{scalable}%
+% space before the initial
+\grechangedim{beforeinitialshift}{1.43 mm}{scalable}%
+% when bolshifts are enabled, minimum space between beginning of line and first syllable text
+\grechangedim{minimalspaceatlinebeginning}{0 cm}{scalable}%
+
+%the space above the lines
+\grechangedim{spaceabovelines}{0.44576 cm plus 0.36461 cm minus 0.09114 cm}{scalable}%
+%\grechangedim{spaceabovelines}{0.429 cm plus 2 cm minus 0.09114 cm}{scalable}%
+%the space between the lines and the bottom of the text
+\grechangedim{spacelinestext}{0.572 cm}{scalable}%
+%the space beneath the text
+\grechangedim{spacebeneathtext}{0 cm}{scalable}%
+% height of the text above the note line
+\grechangedim{abovelinestextraise}{-0.1 cm}{scalable}%
+% height that is added at the top of the lines if there is text above the lines (it must be bigger than the text for it to be taken into consideration)
+\grechangedim{abovelinestextheight}{0.3 cm}{scalable}%
+
+
+%%%%%%% annotation et commentary
+%\gresetheadercapture{commentary}{grecommentary}{string}
+%\grechangestyle{commentary}{\it\footnotesize\color{gregoriocolor}}
+%\grechangedim{annotationraise}{-2.5 mm}{scalable}
+%\grechangestyle{annotation}{\sc\small\color{gregoriocolor}}
+					
+\grechangestyle{firstword}{\sc} % à voir si à garder
+\grechangestyle{initial}{\fontsize{54}{54}\selectfont}
+%\greprintsigns{vepisema}{disable}
+\gresetlinesbehindalteration{visible}
+%\gresetclivisalignment{never} % à voir
+%\gresetlastline{justified}
+%\gresethyphen{force}
+\grechangestaffsize{24}

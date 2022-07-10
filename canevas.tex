@@ -1,0 +1,40 @@
+%%%%%%% préambule, type de document
+\documentclass[12 pt]{article}%
+
+%%%%%%% taille de l'ouvrage
+\usepackage[%
+			paperwidth = 210 mm,% largeur de page
+			paperheight = 297 mm,% hauteur de page
+%			includehead,% inclure dans ces dimensions l'en-tête de page
+%			headheight = 5 mm,% hauteur de l'en-tête
+%			headsep = 4 mm,% séparation entre en-tête et page
+			left = 24 mm,% marge interne
+			right = 24 mm,% marge externe
+			top = 30 mm,% marge haute%
+			bottom = 37 mm,% marge bas
+%			margin=20 mm% marges, option toutes égales
+			]{geometry}% pour les formats
+
+\usepackage{fontspec} %%
+\usepackage[autocompile]{gregoriotex} %%
+\usepackage{graphicx} % pour inclure des images
+
+\setmainfont[
+			SmallCapsFont=Capella-SmallCaps,
+			SmallCapsFeatures={Letters=SmallCaps}
+			]{Capella}%
+
+%%% réglages Capella
+\def\GreStar{\textcolor{gregoriocolor}{*}}
+\def\GreDagger{\textcolor{gregoriocolor}{†}}
+\def\Rbar{\textcolor{gregoriocolor}{℟}}
+\def\Vbar{\textcolor{gregoriocolor}{℣}}
+\def\Abar{\textcolor{gregoriocolor}{Ⱥ}}
+\gresetspecial{'oe}{ø}
+\def\oea{ø} % oe accentué
+			
+\usepackage{xcolor}
+\pagestyle{empty}
+%\definecolor{gregoriocolor}{RGB}{229,53,44}% valeurs prédéfinies
+%\definecolor{gregoriocolor}{cmyk}{0,1,0,0}% pour avoir du rouge clair à l'impression
+\definecolor{gregoriocolor}{cmyk}{0,0,0,1}% pour avoir du noir uniquement
